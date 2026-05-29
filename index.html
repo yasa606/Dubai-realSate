@@ -1,0 +1,758 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Khalid Al Mansouri — Luxury Dubai Real Estate</title>
+    <meta
+      name="description"
+      content="Dubai's premier luxury real estate expert. Exclusive properties in Palm Jumeirah, Downtown Dubai, Dubai Marina and beyond. Work with Khalid Al Mansouri for an unmatched experience."
+    />
+    <meta
+      name="keywords"
+      content="Dubai luxury real estate, Dubai properties, Palm Jumeirah villas, Downtown Dubai penthouses, Dubai real estate agent"
+    />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Montserrat:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- GSAP -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- ═══════════════════════════════════════════
+       HEADER
+  ═══════════════════════════════════════════ -->
+    <header id="site-header">
+      <div class="header-inner">
+        <div class="logo">
+          <span class="logo-mark">✦</span>
+          <span class="logo-text"
+            >KHALID<span class="logo-accent"> AL MANSOURI</span></span
+          >
+        </div>
+        <nav class="nav-links" id="main-nav">
+          <a href="#about" class="nav-link">About</a>
+          <a href="#properties" class="nav-link">Portfolio</a>
+          <a href="#testimonials" class="nav-link">Reviews</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+        <a href="#contact" class="btn-cta header-cta" id="book-consultation-btn"
+          >Book a Consultation</a
+        >
+        <button class="hamburger" id="hamburger-btn" aria-label="Open menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav" id="mobile-nav">
+      <button class="mobile-nav-close" id="mobile-nav-close">✕</button>
+      <a href="#about" class="mobile-nav-link">About</a>
+      <a href="#properties" class="mobile-nav-link">Portfolio</a>
+      <a href="#testimonials" class="mobile-nav-link">Reviews</a>
+      <a href="#contact" class="mobile-nav-link">Contact</a>
+      <a href="#contact" class="btn-cta mobile-cta">Book a Consultation</a>
+    </div>
+
+    <!-- ═══════════════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero-bg">
+        <img
+          src="dubai_hero_bg.png"
+          alt="Dubai skyline at dusk"
+          class="hero-image"
+          id="hero-img"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="hero-eyebrow" id="hero-eyebrow">
+          Dubai's Premier Real Estate Advisor
+        </p>
+        <h1 class="hero-headline" id="hero-headline">
+          Redefining Luxury<br /><em>Living in Dubai</em>
+        </h1>
+        <p class="hero-sub" id="hero-sub">
+          Exclusive access to the world's most coveted addresses.<br />Palm
+          Jumeirah · Downtown · Dubai Marina · DIFC
+        </p>
+        <a href="#properties" class="btn-primary" id="hero-cta"
+          >View Exclusive Portfolio</a
+        >
+      </div>
+      <div class="hero-scroll-indicator" id="scroll-indicator">
+        <span class="scroll-label">Scroll</span>
+        <div class="scroll-line"></div>
+      </div>
+      <!-- Floating stat cards -->
+      <div class="hero-stats" id="hero-stats">
+        <div class="stat-card">
+          <span class="stat-number">AED 4.2B+</span>
+          <span class="stat-label">Sales Closed</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">12+</span>
+          <span class="stat-label">Years in Dubai</span>
+        </div>
+        <div class="stat-card">
+          <span class="stat-number">340+</span>
+          <span class="stat-label">Happy Clients</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       GOLD DIVIDER
+  ═══════════════════════════════════════════ -->
+    <div class="gold-divider"><span>✦</span><span>✦</span><span>✦</span></div>
+
+    <!-- ═══════════════════════════════════════════
+       AGENT PROFILE SECTION
+  ═══════════════════════════════════════════ -->
+    <section class="about" id="about">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-image-col" id="about-image-col">
+            <div class="about-image-wrapper">
+              <img
+                src="agent_headshot.png"
+                alt="Khalid Al Mansouri — Luxury Real Estate Agent Dubai"
+                class="about-img"
+                id="agent-photo"
+              />
+              <div class="about-img-badge">
+                <span class="badge-icon">✦</span>
+                <span class="badge-text"
+                  >Certified Luxury Real Estate Specialist</span
+                >
+              </div>
+            </div>
+          </div>
+          <div class="about-text-col" id="about-text-col">
+            <p class="section-eyebrow">The Expert Behind Your Investment</p>
+            <h2 class="section-heading">
+              Why I Am Your<br /><em>Dubai Expert</em>
+            </h2>
+            <p class="about-body">
+              With over 12 years navigating Dubai's ultra-premium property
+              market, I've cultivated relationships with the emirate's most
+              exclusive developers, private sellers, and investment funds —
+              giving my clients access others simply cannot offer.
+            </p>
+            <p class="about-body">
+              Whether you're acquiring a waterfront palace on Palm Jumeirah, a
+              sky-high penthouse above Downtown Dubai, or structuring a
+              portfolio of branded residences, I deliver a white-glove
+              experience from first consultation to key handover.
+            </p>
+            <div class="about-pillars">
+              <div class="pillar">
+                <span class="pillar-icon">◈</span>
+                <div>
+                  <strong>Off-Market Access</strong>
+                  <p>Exclusive properties never listed publicly</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">◈</span>
+                <div>
+                  <strong>Global Network</strong>
+                  <p>UHNWI clients across 30+ countries</p>
+                </div>
+              </div>
+              <div class="pillar">
+                <span class="pillar-icon">◈</span>
+                <div>
+                  <strong>End-to-End Service</strong>
+                  <p>Legal, financial, and visa guidance included</p>
+                </div>
+              </div>
+            </div>
+            <a href="#contact" class="btn-outline" id="about-cta"
+              >Schedule a Private Consultation</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       PROPERTY GRID SECTION
+  ═══════════════════════════════════════════ -->
+    <section class="properties" id="properties">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Curated Selection</p>
+          <h2 class="section-heading">Exclusive <em>Portfolio</em></h2>
+          <p class="section-sub">
+            Each property is personally selected to represent the pinnacle of
+            Dubai living.
+          </p>
+        </div>
+        <div class="property-grid" id="property-grid">
+          <!-- Card 1 -->
+          <div class="property-card" id="prop-card-1">
+            <div class="property-img-wrap">
+              <img
+                src="property_1.png"
+                alt="Marina Penthouse Dubai"
+                class="property-img"
+                loading="lazy"
+              />
+              <div class="property-overlay">
+                <div class="overlay-content">
+                  <span class="overlay-label">View Details</span>
+                  <span class="overlay-icon">→</span>
+                </div>
+              </div>
+              <div class="property-badge">Penthouse</div>
+            </div>
+            <div class="property-info">
+              <div class="property-location">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin-icon lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Dubai Marina
+              </div>
+              <h3 class="property-name">Sky Residences — The Crown</h3>
+              <div class="property-specs">
+                <span>5 Beds</span>
+                <span class="spec-dot">·</span>
+                <span>6 Baths</span>
+                <span class="spec-dot">·</span>
+                <span>8,200 sq ft</span>
+              </div>
+              <div class="property-footer">
+                <span class="property-price">AED 28,500,000</span>
+                <a href="#contact" class="property-enquire">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="property-card" id="prop-card-2">
+            <div class="property-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&q=80"
+                alt="Palm Jumeirah Villa"
+                class="property-img"
+                loading="lazy"
+              />
+              <div class="property-overlay">
+                <div class="overlay-content">
+                  <span class="overlay-label">View Details</span>
+                  <span class="overlay-icon">→</span>
+                </div>
+              </div>
+              <div class="property-badge">Villa</div>
+            </div>
+            <div class="property-info">
+              <div class="property-location">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin-icon lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Palm Jumeirah
+              </div>
+              <h3 class="property-name">Signature Frond Villa — Signature</h3>
+              <div class="property-specs">
+                <span>7 Beds</span>
+                <span class="spec-dot">·</span>
+                <span>8 Baths</span>
+                <span class="spec-dot">·</span>
+                <span>14,500 sq ft</span>
+              </div>
+              <div class="property-footer">
+                <span class="property-price">AED 65,000,000</span>
+                <a href="#contact" class="property-enquire">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="property-card" id="prop-card-3">
+            <div class="property-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&q=80"
+                alt="Downtown Dubai Apartment"
+                class="property-img"
+                loading="lazy"
+              />
+              <div class="property-overlay">
+                <div class="overlay-content">
+                  <span class="overlay-label">View Details</span>
+                  <span class="overlay-icon">→</span>
+                </div>
+              </div>
+              <div class="property-badge">Apartment</div>
+            </div>
+            <div class="property-info">
+              <div class="property-location">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin-icon lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Downtown Dubai
+              </div>
+              <h3 class="property-name">Burj Crown — Sky High</h3>
+              <div class="property-specs">
+                <span>3 Beds</span>
+                <span class="spec-dot">·</span>
+                <span>4 Baths</span>
+                <span class="spec-dot">·</span>
+                <span>3,800 sq ft</span>
+              </div>
+              <div class="property-footer">
+                <span class="property-price">AED 12,900,000</span>
+                <a href="#contact" class="property-enquire">Enquire</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="property-card" id="prop-card-4">
+            <div class="property-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1613977257363-707ba9348227?w=800&q=80"
+                alt="Beachfront Mansion Emirates Hills"
+                class="property-img"
+                loading="lazy"
+              />
+              <div class="property-overlay">
+                <div class="overlay-content">
+                  <span class="overlay-label">View Details</span>
+                  <span class="overlay-icon">→</span>
+                </div>
+              </div>
+              <div class="property-badge">Mansion</div>
+            </div>
+            <div class="property-info">
+              <div class="property-location">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-map-pin-icon lucide-map-pin"
+                >
+                  <path
+                    d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                  />
+                  <circle cx="12" cy="10" r="3" />
+                </svg>
+                Emirates Hills
+              </div>
+              <h3 class="property-name">Grand Estate — Emirates Hills</h3>
+              <div class="property-specs">
+                <span>9 Beds</span>
+                <span class="spec-dot">·</span>
+                <span>10 Baths</span>
+                <span class="spec-dot">·</span>
+                <span>22,000 sq ft</span>
+              </div>
+              <div class="property-footer">
+                <span class="property-price">AED 120,000,000</span>
+                <a href="#contact" class="property-enquire">Enquire</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="view-all-wrap">
+          <a href="#contact" class="btn-outline" id="view-all-btn"
+            >Request Full Portfolio</a
+          >
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       SOCIAL PROOF / TESTIMONIALS
+  ═══════════════════════════════════════════ -->
+    <section class="testimonials" id="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <p class="section-eyebrow">Client Testimonials</p>
+          <h2 class="section-heading">What My Clients <em>Say</em></h2>
+        </div>
+
+        <!-- Featured In -->
+        <div class="featured-in" id="featured-in">
+          <p class="featured-label">As Seen In</p>
+          <div class="media-logos">
+            <div class="media-logo">Forbes</div>
+            <div class="media-logo">Bloomberg</div>
+            <div class="media-logo">Arabian Business</div>
+            <div class="media-logo">Gulf News</div>
+            <div class="media-logo">Property Finder</div>
+          </div>
+        </div>
+
+        <!-- Testimonial Slider -->
+        <div class="testimonial-slider" id="testimonial-slider">
+          <div class="testimonial-track" id="testimonial-track">
+            <div class="testimonial-slide active">
+              <div class="quote-icon">"</div>
+              <blockquote class="testimonial-text">
+                Khalid didn't just find us a property — he found us a lifestyle.
+                Our Palm Jumeirah villa exceeded every expectation. His
+                off-market access and personal attention to detail are
+                unparalleled in Dubai.
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">S.R.</div>
+                <div class="author-info">
+                  <strong>Sasha R.</strong>
+                  <span>CEO, Tech Ventures · London</span>
+                </div>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="quote-icon">"</div>
+              <blockquote class="testimonial-text">
+                We were purchasing from abroad and needed someone we could trust
+                completely. Khalid handled everything — the legal process, the
+                mortgage, even the interior referrals. A world-class experience
+                from start to finish.
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">J.W.</div>
+                <div class="author-info">
+                  <strong>James W.</strong>
+                  <span>Private Investor · Singapore</span>
+                </div>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+            <div class="testimonial-slide">
+              <div class="quote-icon">"</div>
+              <blockquote class="testimonial-text">
+                I've worked with agents across London, Monaco, and New York.
+                Khalid is operating at a level above all of them. He understood
+                our brief instantly and delivered beyond what we thought
+                possible.
+              </blockquote>
+              <div class="testimonial-author">
+                <div class="author-avatar">A.K.</div>
+                <div class="author-info">
+                  <strong>Amira K.</strong>
+                  <span>Director, Global Family Office · Riyadh</span>
+                </div>
+                <div class="star-rating">★★★★★</div>
+              </div>
+            </div>
+          </div>
+          <div class="slider-controls">
+            <button
+              class="slider-btn prev-btn"
+              id="prev-btn"
+              aria-label="Previous"
+            >
+              ‹
+            </button>
+            <div class="slider-dots" id="slider-dots">
+              <button
+                class="dot active"
+                id="dot-0"
+                aria-label="Slide 1"
+              ></button>
+              <button class="dot" id="dot-1" aria-label="Slide 2"></button>
+              <button class="dot" id="dot-2" aria-label="Slide 3"></button>
+            </div>
+            <button class="slider-btn next-btn" id="next-btn" aria-label="Next">
+              ›
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="contact-bg-pattern"></div>
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-left" id="contact-left">
+            <p class="section-eyebrow">Begin Your Journey</p>
+            <h2 class="section-heading">
+              Let's Find Your<br /><em>Dream Property</em>
+            </h2>
+            <p class="contact-tagline">
+              A single conversation can change your address forever. Reach out —
+              I personally reply to every inquiry within 2 hours.
+            </p>
+            <div class="contact-info-items">
+              <div class="contact-info-item">
+                <span class="ci-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-phone-icon lucide-phone"
+                  >
+                    <path
+                      d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+                    /></svg
+                ></span>
+                <div>
+                  <strong>WhatsApp Direct</strong>
+                  <a
+                    href="https://wa.me/971500000000"
+                    class="ci-value"
+                    id="whatsapp-link"
+                    >+971 50 000 0000</a
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="ci-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-mail-icon lucide-mail"
+                  >
+                    <path d="m22 7-8.991 5.727a2 2 0 0 1-2.009 0L2 7" />
+                    <rect x="2" y="4" width="20" height="16" rx="2" /></svg
+                ></span>
+                <div>
+                  <strong>Email</strong>
+                  <a
+                    href="mailto:khalid@luxurydxb.com"
+                    class="ci-value"
+                    id="email-link"
+                    >khalid@luxurydxb.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-info-item">
+                <span class="ci-icon"
+                  ><svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-map-pin-icon lucide-map-pin"
+                  >
+                    <path
+                      d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"
+                    />
+                    <circle cx="12" cy="10" r="3" /></svg
+                ></span>
+                <div>
+                  <strong>Office</strong>
+                  <span class="ci-value">DIFC, Gate Avenue — Dubai, UAE</span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="contact-right" id="contact-right">
+            <form class="contact-form" id="contact-form" novalidate>
+              <div class="form-group" id="form-group-name">
+                <label for="full-name">Full Name</label>
+                <input
+                  type="text"
+                  id="full-name"
+                  name="name"
+                  placeholder="Your full name"
+                  required
+                />
+              </div>
+              <div class="form-group" id="form-group-interest">
+                <label for="interest">I Am Interested In</label>
+                <div class="select-wrapper">
+                  <select id="interest" name="interest" required>
+                    <option value="" disabled selected>
+                      Select your interest
+                    </option>
+                    <option value="buying">Buying a Property</option>
+                    <option value="selling">Selling a Property</option>
+                    <option value="investing">Investment Opportunities</option>
+                    <option value="off-market">Off-Market Listings</option>
+                  </select>
+                  <span class="select-arrow">›</span>
+                </div>
+              </div>
+              <div class="form-group" id="form-group-whatsapp">
+                <label for="whatsapp">WhatsApp Number</label>
+                <input
+                  type="tel"
+                  id="whatsapp"
+                  name="whatsapp"
+                  placeholder="+971 50 000 0000"
+                  required
+                />
+              </div>
+              <button
+                type="submit"
+                class="btn-primary btn-full"
+                id="submit-btn"
+              >
+                <span class="btn-text">Send Message via WhatsApp</span>
+                <span class="btn-icon">→</span>
+              </button>
+              <p class="form-disclaimer">
+                Your information is kept strictly confidential. No spam, ever.
+              </p>
+            </form>
+            <div class="form-success" id="form-success">
+              <span class="success-icon">✦</span>
+              <h3>Thank You!</h3>
+              <p>
+                Your message has been received. Khalid will respond on WhatsApp
+                within 2 hours.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════════════ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <div class="logo">
+              <span class="logo-mark">✦</span>
+              <span class="logo-text"
+                >KHALID<span class="logo-accent"> AL MANSOURI</span></span
+              >
+            </div>
+            <p class="footer-tagline">
+              Dubai's most trusted luxury property advisor, serving discerning
+              clients globally since 2012.
+            </p>
+            <div class="footer-social">
+              <a
+                href="#"
+                class="social-link"
+                id="instagram-link"
+                aria-label="Instagram"
+                >IG</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                id="linkedin-link"
+                aria-label="LinkedIn"
+                >LI</a
+              >
+              <a
+                href="#"
+                class="social-link"
+                id="youtube-link"
+                aria-label="YouTube"
+                >YT</a
+              >
+            </div>
+          </div>
+          <div class="footer-links-col">
+            <h4>Quick Links</h4>
+            <a href="#about">About Khalid</a>
+            <a href="#properties">Property Portfolio</a>
+            <a href="#testimonials">Client Reviews</a>
+            <a href="#contact">Book Consultation</a>
+          </div>
+          <div class="footer-links-col">
+            <h4>Locations</h4>
+            <a href="#properties">Palm Jumeirah</a>
+            <a href="#properties">Downtown Dubai</a>
+            <a href="#properties">Dubai Marina</a>
+            <a href="#properties">Emirates Hills</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            © 2026 Khalid Al Mansouri Real Estate. All rights reserved. RERA
+            Certified.
+          </p>
+          <div class="footer-legal">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
